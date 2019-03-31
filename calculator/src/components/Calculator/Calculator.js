@@ -7,8 +7,8 @@ import Actions from '../ActionButton/Actions';
 const Calculator = props => {
     return (
         <div>
-            <DisplayResult />
-            <Actions />
+            {/*<DisplayResult /> */}
+            {/*<Actions /> */}
             <Numbers />
         </div>
     )
