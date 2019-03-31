@@ -3,17 +3,17 @@
 }
 
 .simple-button {
-    width:7rem;
-    height:3rem;
-    margin:0.1rem;
+    width:8.33rem;
+    height:4rem;
     background-color: white;
     border:0.1rem solid grey;
+    font-size:2rem;
 }
 
 .last-button {
-    width:21.5rem;
-    height:3rem;
-    margin:0.1rem;
+    width:25rem;
+    height:4rem;
     background-color: white;
     border:0.1rem solid grey;
+    font-size:2rem;
 }
