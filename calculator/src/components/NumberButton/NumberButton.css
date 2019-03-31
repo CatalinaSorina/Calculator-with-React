@@ -1,0 +1,19 @@
+.numbers {
+    width:25rem;
+}
+
+.simple-button {
+    width:7rem;
+    height:3rem;
+    margin:0.1rem;
+    background-color: white;
+    border:0.1rem solid grey;
+}
+
+.last-button {
+    width:21.5rem;
+    height:3rem;
+    margin:0.1rem;
+    background-color: white;
+    border:0.1rem solid grey;
+}
