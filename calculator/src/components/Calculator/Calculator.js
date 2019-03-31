@@ -1,13 +1,15 @@
 import React from 'react'
 
 import DisplayResult from '../DisplayResult/DisplayResult';
-import NumberButton from '../NumberButton/NumberButton';
-import ActionButton from '../ActionButton/ActionButton';
+import Numbers from '../NumberButton/Numbers';
+import Actions from '../ActionButton/Actions';
 
 const Calculator = props => {
     return (
         <div>
             <DisplayResult />
+            <Actions />
+            <Numbers />
         </div>
     )
 }

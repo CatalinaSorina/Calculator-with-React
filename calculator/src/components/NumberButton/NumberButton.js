@@ -1,5 +1,4 @@
-import React from 'react'
-import './NumberButton.css';
+import React from 'react';
 
 const NumberButton = props => {
     return (
