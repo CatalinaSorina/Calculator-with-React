@@ -1,19 +1,26 @@
 .numbers {
-    width:25rem;
+  width: 25rem;
 }
 
 .simple-button {
-    width:8.33rem;
-    height:4rem;
-    background-color: white;
-    border:0.1rem solid grey;
-    font-size:2rem;
+  width: 8.332rem;
+  height: 5rem;
+  background-color: white;
+  border: 0.1rem solid grey;
+  font-size: 2rem;
+  outline: none;
 }
 
 .last-button {
-    width:25rem;
-    height:4rem;
-    background-color: white;
-    border:0.1rem solid grey;
-    font-size:2rem;
+  width: 25rem;
+  height: 4.2rem;
+  background-color: white;
+  border: 0.1rem solid grey;
+  font-size: 2rem;
+  outline: none;
+}
+
+.simple-button:active,
+.last-button:active {
+  background-color: pink;
 }

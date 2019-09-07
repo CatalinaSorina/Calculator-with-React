@@ -1,10 +1,10 @@
 .display {
-    width:23rem;
-    height: 5rem;
-    background-color: rgba(0,0,0,0.8);
-    color:white;
-    cursor: default;
-    text-align: right;
-    font-size:3rem;
-    padding:1rem;
+  width: 26rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  cursor: default;
+  text-align: right;
+  font-size: 3rem;
+  padding: 1rem;
 }

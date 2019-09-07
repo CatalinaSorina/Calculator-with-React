@@ -56,7 +56,7 @@ class Calculator extends React.Component {
             result = oldDisplay / display;
             break;
           default:
-            result = 0;
+            result = display;
         }
         this.setState({ display: result, oldDisplay: null, operand: null });
         break;
@@ -69,8 +69,10 @@ class Calculator extends React.Component {
     return (
       <div className="calculator">
         <DisplayResult display={this.state.display} />
-        <Actions operandAction={this.operandAction} />
-        <Numbers displayNumber={this.displayNumber} />
+        <div className="operators">
+          <Numbers displayNumber={this.displayNumber} />
+          <Actions operandAction={this.operandAction} />
+        </div>
       </div>
     );
   }
