@@ -11,12 +11,18 @@ class Calculator extends React.Component {
     display: 0
   };
 
+  displayNumber = value => {
+    this.setState({
+      display: value
+    });
+  };
+
   render() {
     return (
       <div className="calculator">
         <DisplayResult display={this.state.display} />
         <Actions />
-        <Numbers />
+        <Numbers displayNumber={this.displayNumber} />
       </div>
     );
   }
