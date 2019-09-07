@@ -5,7 +5,7 @@ import NumberButton from "./NumberButton";
 
 const Numbers = props => {
   const numberAction = val => {
-    console.log(val);
+    // console.log(val);
     props.displayNumber(val);
   };
 
