@@ -18,11 +18,21 @@ class Calculator extends React.Component {
     });
   };
 
+  operandAction = operand => {
+    switch (operand) {
+      case "clear":
+        this.setState({ display: 0 });
+        break;
+      default:
+        console.log("not an operand");
+    }
+  };
+
   render() {
     return (
       <div className="calculator">
         <DisplayResult display={this.state.display} />
-        <Actions />
+        <Actions operandAction={this.operandAction} />
         <Numbers displayNumber={this.displayNumber} />
       </div>
     );
