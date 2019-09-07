@@ -14,12 +14,18 @@ class Calculator extends React.Component {
   };
 
   displayNumber = value => {
-    this.setState({
-      display:
-        Number(this.state.display) === 0 || this.state.oldDisplay === null
-          ? value
-          : this.state.display + "" + value
-    });
+    let display = this.state.display;
+    if (
+      Number(display) !== 0 &&
+      display !== "-" &&
+      display !== "+" &&
+      display !== ":" &&
+      display !== "x"
+    ) {
+      value = this.state.display + "" + value;
+    }
+
+    this.setState({ display: value });
   };
 
   operandAction = operand => {
@@ -33,7 +39,7 @@ class Calculator extends React.Component {
       case "x":
         this.setState({
           oldDisplay: this.state.display,
-          display: 0,
+          display: operand,
           operand: operand
         });
         // console.log(operand);
@@ -42,6 +48,7 @@ class Calculator extends React.Component {
         let result;
         const oldDisplay = Number(this.state.oldDisplay);
         const display = Number(this.state.display);
+
         switch (this.state.operand) {
           case "-":
             result = oldDisplay - display;
@@ -56,9 +63,9 @@ class Calculator extends React.Component {
             result = oldDisplay / display;
             break;
           default:
-            result = display;
+            result = 0;
         }
-        this.setState({ display: result, oldDisplay: null, operand: null });
+        this.setState({ display: result, oldDisplay: null });
         break;
       default:
         console.log("not an operand");
