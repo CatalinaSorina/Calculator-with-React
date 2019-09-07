@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import './DisplayResult.css';
+import "./DisplayResult.css";
 
-const DisplayResult = () => {
-    return (
-        <div className='display'>0</div>
-    )
-}
+const DisplayResult = props => {
+  return <div className="display">{props.display}</div>;
+};
 
 export default DisplayResult;
