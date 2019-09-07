@@ -13,7 +13,8 @@ class Calculator extends React.Component {
 
   displayNumber = value => {
     this.setState({
-      display: value
+      display:
+        this.state.display === 0 ? value : this.state.display + "" + value
     });
   };
 
